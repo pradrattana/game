@@ -6,19 +6,7 @@
     <title>เกมจับผิดภาพ</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" style="width: 100%; height: 100%; position: relative; background: #231F20"></canvas>
-    <script>
-      // here we are just getting the canvas and asigning it the to the vairable context
-      var canvas = document.getElementById('unity-canvas');
-      var context = canvas.getContext('2d');
-  
-      // no we get with of content and asign the same hight as the with. this gives up aspect ration 1:1.
-      context.canvas.width = window.innerWidth;
-      //context.canvas.height = window.innerWidth;
-  
-      // If you want aspect ration 4:3 uncomment the line below.
-      context.canvas.height = 16 * window.innerWidth / 9;
-    </script>
+    <canvas id="unity-canvas" style="width: 375px; height: 812px; background: #231F20"></canvas>
     <script src="Build/Downloads.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
